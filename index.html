@@ -8,10 +8,13 @@
   </head>
   
   <body>
-    <a-scene physics="gravity: 0 -9.8 0">
+    <!-- Basic set up of a scene (what will be seen when the code is live)-->
+    <a-scene physics="gravity: 0 -9.8 0"> 
 
+     
       <a-assets>
-        <img id="stoneTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
+         <!--Texture for the ground placeholder-->
+        <img id="grassTexture" src="assets/Grass-Ground.jpeg">
       </a-assets>
 
       <!-- Camera -->
@@ -25,12 +28,13 @@
     rotation="-90 0 0"
     width="1000"
     height="1000"
-    src="#stoneTexture"
+    src="#grassTexture"
     repeat="200 200"
     static-body>
   </a-plane>
     </a-scene>
 
-   
   </body>
+  git config pull.rebase false  # merge
+  
   </html>
